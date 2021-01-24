@@ -1,0 +1,292 @@
+:root{
+    --whiteAndyB: rgba(248, 248, 248, 0.97);
+    --greenAndyB:  rgb(28, 204, 140, 0.97);
+    --goldAndyB:  rgba(230, 197, 13, 0.97);
+    --blackAndyB:  rgba(0, 0, 0, 1);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: courier;
+}
+
+body{
+    background-color: var(--whiteAndyB);
+    text-align: center;
+}
+
+p{
+    clear: both;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--blackAndyB);
+    text-align:center;
+    cursor: pointer;
+
+}
+
+.contactText{
+    white-space:pre;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.7s;
+
+}
+.contactText:hover{
+    color: var(--greenAndyB);
+    transition-duration: 0.3s;
+}
+.upperHeader{
+    display: flex;
+    height: 145px;
+    background-color: var(--blackAndyB);
+    color: var(--goldAndyB);
+    align-items: center;
+}
+
+.upperHeader a {
+    display: block;
+    justify-content: center;
+    color: var(--goldAndyB);
+    font-size: 1.7rem;
+    margin: 10px auto;
+}
+
+.upperHeader a.phoneNum{
+    display: inline-block;
+    color: var(--goldAndyB);
+}
+
+.upperHeaderRight{
+    display: flex;
+    width: 700px;
+    color:var(--greenAndyB);
+}
+.upperHeaderCentre{
+    flex-grow: 1;
+}
+.upperHeaderLeft{
+    display: flex;
+    justify-content: flex-end;
+    width: 400px;
+    color:var(--greenAndyB);
+}
+.phoneNumners{
+    justify-content: center;
+}
+
+.banner{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    background-color: var(--greenAndyB);
+    color: var(--blackAndyB);
+    font-weight: 900;
+    z-index: 100;
+
+}
+
+.logo{
+    position: sticky;
+    height: 135px;
+    width: auto;
+    
+}
+
+.container{
+    text-align: center;
+}
+
+.navBar{
+    z-index: 100;
+    margin: auto;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.navBar a{
+    display: inline-block;
+    overflow: hidden;
+    font-size: 22px;
+    text-align: left;
+    top: 0;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    z-index: 10;
+    transition-duration: 0.5s;
+}
+
+.navBar a:hover{
+    color: var(--goldAndyB);
+    background-color: var(--blackAndyB);
+    transition-duration: 0.5s;
+
+}
+
+.current{
+    color: var(--greenAndyB);
+    background-color: var(--blackAndyB);
+    border-radius: 50%;
+    border: 10px double var(--whiteAndyB);
+}
+
+.main, .footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainLeft, .mainRight, .footerLeft, .footerRight{
+    width:300px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sideLogo{
+    position: sticky;
+    height: 150px;
+    top: 245px;
+    margin: 200px 0px;
+    border: 5px solid var(--blackAndyB);
+}
+
+.footer{
+    height: 300px;
+    background-color: var(--blackAndyB);
+}
+.policySection{
+    height: 50px;
+}
+
+.navBar{
+    z-index: 100;
+    margin: auto;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footerCentreCentre{
+    z-index: 100;
+    margin: auto;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.footerCentreCentre i{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: auto;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 20px;
+    z-index: 10;
+    transition-duration: .7s;
+
+}
+.PolicyContainer{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Social Media Icons */
+
+
+.fab {
+    width: auto;
+    height: 200px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+
+}
+  
+.fab:hover {
+      opacity: 0.6;
+      background-color: wheat;
+}
+
+.fa-facebook, .fa-facebook-messenger { color: #3b5998; }
+.fa-twitter { color: #00aced; }
+.fa-instagram { color: #517fa4; }
+.fa-spotify { color: #1ed760; }
+.fa-whatsapp { color: #1ed760; }
+.fa-skype{ color:#00aff0;}
+
+.imageScrollerDiv{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    
+}
+.mainImageDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px auto;
+    width: 1000px;
+    height: auto;
+}
+.mainImage{
+    width: 1000px;
+}
+div#comparison { 
+    width: 60vw;
+    height: 60vw;
+    max-width: 800px;
+    max-height: 700px;
+    overflow: hidden; 
+    border: 5px solid var(--blackAndyB);
+}
+  div#comparison figure { 
+    background-image: url(./Resources/TestScrollImage/before.png); 
+    background-size: cover;
+    position: relative;
+    width: 100%; 
+    height: 100%;
+
+  }
+  div#comparison figure > img { 
+    position: relative;
+    width: 100%;
+  }
+  div#comparison figure div { 
+    background-image: url(./Resources/TestScrollImage/after.png);
+    background-size: cover;
+    position: absolute;
+    width: 50%; 
+    overflow: hidden;
+    bottom: 0;
+    height: 100%;
+  }
+  
+  input[type=range]{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    position: relative;
+    top: -2rem; left: -2%;
+    background-color: rgba(255,255,255,0.1);
+    width: 102%; 
+  }
+  input[type=range]:focus { 
+    outline: none; 
+  }
+  input[type=range]:active { 
+    outline: none;  
+  }
