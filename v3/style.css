@@ -83,13 +83,19 @@ body{
 }
 
 img {
-    width: 100%;
+
     height: auto;
     max-width: 800px;
+    border: .2rem solid black;
+    object-fit: cover;
+
 }
+
+
 .homePage{
     background-color: var(--greenAndyB);
-    background-image: url(./Resources/temporaryImages/faded80.png);
+    background-image: url(./Resources/Images/andyLawnDiagonal.JPG);
+    background-position: 0% 80%;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -144,9 +150,10 @@ p{
     -0.03em -0.03em black,
     -0.03em 0.03em black,
     0.03em -0.03em black,
-    0.03em 0.03em black; */
-
+    0.03em 0.03em black; 
 }
+*/
+
 .homePage .PolicyContainer{
     color: white;
     font-size: 1.5rem;
@@ -461,7 +468,7 @@ div#comparison {
     max-width: 800px;
     max-height: 700px;
     overflow: hidden; 
-    border: 5px solid var(--blackAndyB);
+    border: 0.2rem solid var(--blackAndyB);
 }
   div#comparison figure { 
     background-image: url(./Resources/TestScrollImage/before.png); 
@@ -500,6 +507,15 @@ div#comparison {
     outline: none;  
   }
 
+  .aboutSection img{
+    width: 60%;
+  }
+  
+  .aboutSection p{
+    text-align: left;
+    padding:2rem;
+  }
+
   .gallery {
       display: flex;
       justify-content:flex-start;
@@ -515,9 +531,31 @@ div#comparison {
       align-content: flex-start;
   }
 
-  #service1{
-      background-color: #74747457;
+  .thumbnail:hover {
+    transform: scale(1.5);
+    border: 2px solid black;
+    z-index: 100;
   }
+
+  .galleryZoom:hover{
+    transform: scale(2);
+    transition-duration: 0.5s;
+  }
+  .onZoom{
+      display: none;
+  }
+  .thumbnail:hover .onZoom{
+    display:block;
+}
+  #service1{
+      background-color: lightgray;
+      transition-duration: 0.5s;
+      
+  }
+  #service2{
+    background-color: white;
+    transition-duration: 0.5s;
+}
 
   .thumbnail p {
       padding: 0 20px;
@@ -529,6 +567,7 @@ div#comparison {
       padding: 0;
       height: 200px;
       overflow: hidden;
+      border: none;
   }
 
   .service-heading,
