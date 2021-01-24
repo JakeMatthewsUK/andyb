@@ -72,6 +72,10 @@ body{
     background-color: white;
     text-align: center;
 }
+
+#homePageBody{
+    overflow: hidden;
+} 
 .homePage{
     background-color: var(--greenAndyB);
     background-image: url(./Resources/temporaryImages/faded80.png);
@@ -295,6 +299,11 @@ a{
 .fa-spotify { color: #1ed760; }
 .fa-whatsapp { color: #1ed760; }
 .fa-skype{ color:#00aff0;}
+
+.footer{
+    height:175px;
+    position: relative;
+}
 .footerCentre{
     margin: auto;
     bottom:0;
@@ -315,7 +324,7 @@ a{
     position: fixed;
     height: 150px;
     top: 100px;
-    right: 100px;
+    left:87vw;
     margin: 200px 0px;
     border: 5px solid var(--blackAndyB);
 }
@@ -360,6 +369,10 @@ a{
     padding: 5px;
     justify-content: center;
     font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    
 }
 
 .imageScrollerDiv{
