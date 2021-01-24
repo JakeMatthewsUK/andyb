@@ -1,5 +1,5 @@
 :root{
-    --whiteAndyB: #747474;
+    --greyAndyB: #747474;
     --greenAndyB: #14a78c;
     --goldAndyB:  #ffe400;
     --blackAndyB: #272727;
@@ -151,11 +151,34 @@ p{
     color: white;
     font-size: 1.5rem;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    
 }
+.PolicyContainer{
+    text-align: center;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+}
+
+.contactText{
+    white-space:pre;
+    font-weight: bold;
+    cursor: pointer;
+    transition-duration: 0.7s;
+    margin: 0px 10px;
+
+}
+.contactText:hover{
+    color: var(--greenAndyB);
+    transition-duration: 0.3s;
+}
+
 .homePage .contactText{
-    color: var(--whiteAndyB);
-    font-size: 1.5rem;
+    color: white;
+    font-size: 1.2rem;
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+    margin: 0px 10px;
 }
 
 a{
@@ -165,18 +188,6 @@ a{
     text-align:center;
     cursor: pointer;
 
-}
-
-.contactText{
-    white-space:pre;
-    font-weight: bold;
-    cursor: pointer;
-    transition-duration: 0.7s;
-
-}
-.contactText:hover{
-    color: var(--greenAndyB);
-    transition-duration: 0.3s;
 }
 .upperHeader{
     display: flex;
@@ -233,7 +244,12 @@ a{
     position: sticky;
     height: 135px;
     width: auto;
-    
+}
+.logo:hover{
+    position: sticky;
+    height: 135px;
+    width: auto;
+    opacity: 0.7;
 }
 
 .container{
@@ -390,7 +406,7 @@ a{
 .footerCentreCentre{
     z-index: 100;
     margin: auto;
-    height: 100px;
+    height: 65px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -398,21 +414,23 @@ a{
 .footerCentreCentre i{
     display: inline-block;
     overflow: hidden;
-    width: 100px;
+    width: 60px;
     height: auto;
     align-items: center;
     cursor: pointer;
-    padding: 20px 20px;
+    padding: 10px 10px;
     z-index: 10;
     transition-duration: .7s;
 
 }
 .PolicyContainer{
     text-align: center;
+    font-size: 1rem;
     padding: 5px;
     text-align: center;
     font-weight: bold;
     width: 100%;
+    
 }
 
 #landing-page-policy {
