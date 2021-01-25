@@ -7,7 +7,9 @@
     <link rel="shortcut icon" href="./Resources/draftFavicon.ico" type="image/x-icon">
     <link rel="icon" href="./Resources/draftFavicon.ico" type="image/x-icon">
 </head>
-<body>
+<body class = "reviewPage">
+    <div class="reviewBackgroundDiv">
+    </div>
     <div class="upperHeader">
         <div class="upperHeaderLeft">
             <div class="container">
@@ -43,24 +45,29 @@
         <div class="bannerRight">
         </div>
     </div>
-    <div class="main">
+    <div class="main reviewMain">
         <div class="mainLeft">
         </div>
         <div class="mainCentre">
             <br>
             <br>
             <h1 class="pageTitle" id="mainTitle">Reviews</h1>
-            <br>
-            <p>There will be some facility to input a review and display past reviews on this page.</p>
-            <br>
-            <div class = "mainImageDiv">
-                <img class="mainImage"src="./Resources/temporaryImages/reviewImage.jpeg" alt="homePageGarden">
+            <div class="reviewSection">
+                <div class="activeReview">
+                    <ul class="reviews" id="currentReview"> 
+                       <li class="review"><p class="reviewTitle">Title</p><p class="reviewText">Review</p></li>
+                    </ul>
+                    <ul class="reviewBank" id="reviewBank"> 
+                        <li class="review"><p class="reviewTitle">Andy did a great job tidying up my garden.</p><p class="reviewText">He tidied everything up and made it look amazing. What a legend. I gave him a nice tip and i suggest you do aswell!</p></li>
+                        <li class="review"><p class="reviewTitle">Andy did an even better job in my garden!</p><p class="reviewText">Yes he was amazing.</p></li>
+                        <li class="review"><p class="reviewTitle">Andy did even better than that at my garden!</p><p class="reviewText">He did real good and was good value.</p></li>
+                    </ul>
+                    <div class="reviewScroller">
+                        <button id="reviewLeftButton" onclick="reviewClick(-1)"><span class=" buttonArrow leftButtonArrow"></span></button>
+                        <button id="reviewRightButton" onclick="reviewClick(+1)"><span class=" buttonArrow rightButtonArrow"></span></button>
+                    </div>
+                </div>
             </div>
-
-            <p>HereAround him whirled black, boundless vastness pinpointed with unfriendly stars. Even familiar constellations seemed alien and remote, luminous symbols detached from human values and emotions. Venus and Earth were invisible on the far side of the Sun, and Mars but the faintest of red lanterns hung upon the void. Great Saturn and Jupiter with their trains of inhabited moons must exist somewhere, but he took them on faith, not evidence.</p>
-            <br>
-            <p>Be patient, they had warned him contemptuously, dumping him from the supply ship like rubbish consigned to the human junk heap. Yes, be patient, and eventually someone might come out for him--but they had not told him how hard it would be to wait and watch the awful void of space and fire-flake star-patterns whirl about him. Patience, like his former life in the hive cities of the Solar system, had long ago ceased to exist. His senses reeled and he could only stare hypnotized at his immediate surroundings.</p> 
-            <br>
         </div>
         <div class="mainRight">
             <img class="sideLogo" src="./Resources/draftLogoBW.jpg" alt="Logo">
@@ -68,7 +75,6 @@
     </div>
     <div class="footerMain">
         <div class="footerLeft">
-
         </div>
         <div class="footerCentre">
             <div class="footerCentreLeft"></div>
@@ -81,10 +87,6 @@
                 <a href="http://www.messenger.com"><i class="fab fa-facebook-messenger fa-2x"></i></a>
             </div>
             <div class="footerCentreRight"></div>
-      
-            <!--
-            <p>Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men. Men men men men menly men men men.</p>
-            -->
         </div>
         <div class="footerRight">
 

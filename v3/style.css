@@ -19,9 +19,12 @@
     padding: 0;
     font-family: LouisGeorgeCafe;
     line-height: 1.2;
-
+    user-select: none;
 }
 
+ul{
+    list-style-type: none;
+}
 .pageTitle{
     font-family: anotherBirdhouse;
     text-transform: uppercase;
@@ -378,6 +381,7 @@ a{
     display: flex;
     height: auto;
     background-color: var(--blackAndyB);
+    opacity: 0.9;
 }
 
 .mainLeft, .mainRight, .footerLeft, .footerRight{
@@ -557,87 +561,202 @@ div#comparison {
     transition-duration: 0.5s;
 }
 
-  .thumbnail p {
-      padding: 0 20px;
-      font-size: 18px;
-  }
+.thumbnail p {
+    padding: 0 20px;
+    font-size: 18px;
+}
 
-  .thumbnail img {
-      margin: 0;
-      padding: 0;
-      height: 200px;
-      overflow: hidden;
-      border: none;
-  }
+.thumbnail img {
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    overflow: hidden;
+    border: none;
+}
 
-  .service-heading,
-  .photo-heading {
-      font-family: anotherBirdhouse;
-      font-size: 36px;
-      color: var(--blackAndyB);
-      margin: 10px auto;
-      padding: 0;
-  }
+.service-heading,
+.photo-heading {
+    font-family: anotherBirdhouse;
+    font-size: 36px;
+    color: var(--blackAndyB);
+    margin: 10px auto;
+    padding: 0;
+}
 
-  .photo-heading {
-    margin-left: 0px;
-  }
+.photo-heading {
+margin-left: 0px;
+}
 
-  #gallery-centre {
-      width: 100%;
-      max-width: 1400px;
-  }
+#gallery-centre {
+    width: 100%;
+    max-width: 1400px;
+}
 
-  .full-width-section {
-      width: 100%;
-      display: flex;
-  }
+.full-width-section {
+    width: 100%;
+    display: flex;
+}
 
-  .feature-photo {
-      width: 60%;
-      flex-shrink: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-items: flex-start;
-      padding: 20px;
-      flex-shrink: 0;
-  }
+.feature-photo {
+    width: 60%;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-items: flex-start;
+    padding: 20px;
+    flex-shrink: 0;
+}
 
-  .feature-photo img {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-  }
+.feature-photo img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-  .photos {
-      width: 40%;
-      display:flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 20px;
-  }
+.photos {
+    width: 40%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
 
-  .gallery-photo {
-      flex-shrink: 1;
-      display: flex;
-      height: 200px;
-      margin-bottom: 20px;
-  }
+.gallery-photo {
+    flex-shrink: 1;
+    display: flex;
+    height: 200px;
+    margin-bottom: 20px;
+}
 
-  .gallery-photo img {
-      width: 50%;
-  }
+.gallery-photo img {
+    width: 50%;
+}
 
-  .photo-info p {
-      text-align: left;
-      margin: 20px;
-  }
+.photo-info p {
+    text-align: left;
+    margin: 20px;
+}
 
-  #gallery1 {
-    background-color: #74747457;
-  }
+#gallery1 {
+background-color: #74747457;
+}
 
-  #gallery2 {
-      flex-direction: row-reverse;
-  }
+#gallery2 {
+    flex-direction: row-reverse;
+}
+
+.reviewSection{
+    margin: 2rem;
+    height: 300px;
+    width: 800px;
+    opacity: 0.9;
+}
+
+.activeReview{
+    width: 100%;
+    height: 100%;
+}
+.reviews{
+    background-color: black;
+    width: 100%;
+}
+.reviewBank{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+} 
+.reviewTitle{
+    font-weight: 900;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    color: var(--goldAndyB);
+    margin: 0px;
+    height: 40px;
+
+}
+.reviewText{
+    font-size: 1.2rem;
+    border: 2px solid black;
+    height: 225px;
+    padding: 20px;
+    margin: 0;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.reviewScroller{
+    height:35px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.reviewScroller button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--goldAndyB);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+.reviewScroller button:focus{
+    border: none;
+}
+.reviewScroller button:hover{
+    transform: scale(1.5);
+}
+
+.buttonArrow{
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin:0;
+    padding-bottom:3px;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.leftButtonArrow::after{
+    content: '<';
+}
+.rightButtonArrow::after{
+    content: '>';
+}
+
+
+.reviewPage{
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+}
+.reviewMain{
+    /* background-image: url("./Resources/temporaryImages/reviewImage.jpeg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-grow: 1;
+
+}
+
+.reviewBackgroundDiv{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("./Resources/temporaryImages/reviewImage.jpeg");
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    background-position: 0% -50%;
+    background-size: cover;
+
+
+}
