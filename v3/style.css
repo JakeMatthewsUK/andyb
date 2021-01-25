@@ -37,12 +37,11 @@ ul{
 }
 #mainTitle{
     font-size: 120px;
-    margin: 0;
 }
 
 #landing-page #mainTitle {
     font-size: 170px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 
@@ -67,10 +66,11 @@ ul{
 }
 #subtitle{
     margin: 0px;
+    margin-bottom: 70px;
     word-spacing: 0.4em;
     font-size: 5rem;
     flex: auto;
-    margin-top: -50px;
+    margin-top: -45px;
 }
 
 .subtitleDiv{
@@ -111,27 +111,6 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.landing-page-text {
-    padding: 30px;
-    font-size: 24px;
-    max-width: 800px;
-    text-align: center;
-    margin: auto;
-}
-
-.landing-page-text-background {
-    background-color:lightgray;
-    border: black 4px solid;
-    display: relative;
-    width: 100%;
-    height: 100%;
-    padding: 20px 40px;
-}
-
-.landing-page-text-writing {
-    opacity: 1;
 }
 
 p{
@@ -548,22 +527,57 @@ div#comparison {
   .onZoom{
       display: none;
   }
+
+.homeBlurbContainer {
+    padding: 30px;
+    font-size: 24px;
+    max-width: 800px;
+    text-align: center;
+    margin: auto;
+    transition-duration: 0.5s;
+}
+
+.homeBlurb {
+    background-color:lightgray;
+    border: black 4px solid;
+    display: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 40px;
+}
+
+.homeBlurbContainer:hover{
+transform: scale(2);
+transition-duration: .5s;
+max-width: 1000px;
+}
+.homeBlurbContainer:hover .homeBlurb p {
+font-size: .7rem;
+display: visible;
+
+}
+
+.hiddenHomeText{
+display: none;
+transition-delay: 0.5s;
+
+}
+
+.homeBlurbContainer:hover .hiddenHomeText{
+display: block;
+transition-delay: 0.5s;
+}
+
   .thumbnail:hover .onZoom{
     display:block;
 }
   #service1{
       background-color: lightgray;
       transition-duration: 0.5s;
-      
   }
   #service2{
     background-color: white;
     transition-duration: 0.5s;
-}
-
-.thumbnail p {
-    padding: 0 20px;
-    font-size: 18px;
 }
 
 .thumbnail img {
@@ -573,11 +587,20 @@ div#comparison {
     overflow: hidden;
     border: none;
 }
+.serviceSubtitle{
+    font-size: 22px;
+    padding: 0 10px;
+    
+}
+.serviceDescription{
+    font-size: 22px;
+    padding: 0 10px;
+} 
 
 .service-heading,
 .photo-heading {
-    font-family: anotherBirdhouse;
     font-size: 36px;
+    font-weight: bold;
     color: var(--blackAndyB);
     margin: 10px auto;
     padding: 0;
@@ -707,9 +730,6 @@ background-color: #74747457;
     cursor: pointer;
     outline: none;
 }
-.reviewScroller button:focus{
-    border: none;
-}
 .reviewScroller button:hover{
     transform: scale(1.5);
 }
@@ -740,7 +760,6 @@ background-color: #74747457;
 
 }
 .reviewMain{
-    /* background-image: url("./Resources/temporaryImages/reviewImage.jpeg"); */
     background-repeat: no-repeat;
     background-size: cover;
     flex-grow: 1;
@@ -757,6 +776,24 @@ background-color: #74747457;
     background-repeat: no-repeat;
     background-position: 0% -50%;
     background-size: cover;
+}
 
+#subtitle{
+    font-size: 6rem;
 
 }
+.contactPage{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contactPage .main{
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.contactPage .mainImage{
+    margin: 20px;
+}
+
