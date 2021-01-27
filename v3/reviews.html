@@ -37,32 +37,37 @@
         </div>
     </nav>
     <!----------Specific Reviews text----------->
-    <div class="main reviewMain">
-        <div class="mainLeft">
-        </div>
-        <div class="mainCentre">
-            <h1 class="pageTitle" id="mainTitle">Reviews</h1>
-            <div class="reviewSection">
-                <div class="activeReview">
-                    <ul class="reviews" id="currentReview"> 
-                       <li class="review"><p class="reviewTitle">Title</p><p class="reviewText">Review</p></li>
-                    </ul>
-                    <ul class="reviewBank" id="reviewBank"> 
-                        <li class="review"><p class="reviewTitle">Andy did a great job tidying up my garden.</p><p class="reviewText">He tidied everything up and made it look amazing. What a legend. I gave him a nice tip and i suggest you do aswell!</p></li>
-                        <li class="review"><p class="reviewTitle">Andy did an even better job in my garden!</p><p class="reviewText">Yes he was amazing.</p></li>
-                        <li class="review"><p class="reviewTitle">Andy did even better than that at my garden!</p><p class="reviewText">He did real good and was good value.</p></li>
-                    </ul>
-                    <div class="reviewScroller">
-                        <button id="reviewLeftButton" onclick="reviewClick(-1)"><span class=" buttonArrow leftButtonArrow"></span></button>
-                        <button id="reviewRightButton" onclick="reviewClick(+1)"><span class=" buttonArrow rightButtonArrow"></span></button>
-                    </div>
+    <main class="reviews">
+        <h1 class="pageTitle">Reviews</h1>
+        <section class="reviewCard">
+            <section class="currentReview">
+                <ul id="currentReview"> 
+                    <li><p class="reviewTitle">Title</p><p class="reviewText">Review</p></li>
+                </ul>
+                <div class="buttonContainer">
+                    <figure class=previousArrow>
+                        <button id="reviewLeftButton" onclick="reviewClick(-1)"><span class="leftButtonArrow"></span></button>
+                        <text class="buttonDescription" onclick="reviewClick(-1)">PREVIOUS</text>
+                    </figure>
+                    <figure class=nextArrow>
+                        <text class="buttonDescription" onclick="reviewClick(+1)">NEXT</text>
+                        <button id="reviewRightButton" onclick="reviewClick(+1)"><span class="rightButtonArrow"></span></button>
+                    </figure>
                 </div>
-            </div>
-        </div>
-        <div class="mainRight">
-            <img class="sideLogo" src="./Resources/draftLogoBW.jpg" alt="Logo">
-        </div>
-    </div>
+            </section>
+            <ul class="reviewBank" id="reviewBank"> 
+                <li><p class="reviewTitle">Andy did a great job tidying up my garden.</p><p class="reviewText">He tidied everything up and made it look amazing. What a legend. I gave him a nice tip and i suggest you do aswell!</p></li>
+                <li><p class="reviewTitle">Andy did an even better job in my garden!</p><p class="reviewText">Yes he was amazing.</p></li>
+                <li><p class="reviewTitle">Andy did even better than that at my garden!</p><p class="reviewText">He did real good and was good value.</p></li>
+    <!--
+        ***TO ADD IN A NEW REVIEW:
+        ***Copy the line below and paste it above this comment
+        ***Replace the text ***comments*** with the appropriate text
+        <li><p class="reviewTitle">***REVIEW TITLE***</p><p class="reviewText">***REVIEW TEXT***</p></li>
+    -->
+            </ul>
+        </section>
+    </main>
         <!---------Social media links, common to all pages---------->
         <section class="socialMediaLinks">
             <a href="http://www.facebook.com"><i class="fab fa-facebook fa-2x"></i></a>

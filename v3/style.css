@@ -272,7 +272,6 @@ nav{
     height:300px;
     margin: 5px;
     text-align: center;
-    
 }
 .serviceCard p{
     width: 100%;
@@ -459,105 +458,101 @@ input[type=range]:active {
 
 /*-------------------Review Page------------------*/
 
+.reviewCard{
+    width: 1000px;
+    height: fit-content;
+    margin: 60px auto;
+    flex-shrink: 10;
+}
+.currentReview{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: lightgrey;
+    border: 2px solid black;
+}
+.reviewBank{
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+} 
+.reviewTitle, .reviewText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    font-weight: 900;
+    max-width: none;
+    
+}
+.reviewTitle{ 
+    font-size: 30px;
+    color: var(--goldAndyB);
+    background-color: var(--blackAndyB);
+    border-bottom: 2px solid black;
+    padding: 20px;
+    
+}
+.reviewText{
+    font-size: 22px;
+    font-style: oblique;
+    color: black;
+    background-color: lightgrey;
+    min-height: 350px;
+    padding: 20px;
+}
 ul{
     list-style-type: none;
 }
-
-.reviewSection{
-    margin: 2rem;
-    height: 300px;
-    width: 800px;
-    opacity: 0.9;
-}
-
-.activeReview{
-    width: 100%;
-    height: 100%;
-}
-.reviews{
-    background-color: black;
-    width: 100%;
-}
-.reviewBank{
-    height: 0;
-    width: 0;
-    visibility: hidden;
-} 
-.reviewTitle{
-    font-weight: 900;
-    font-size: 1.5rem;
-    border: 2px solid black;
-    color: var(--goldAndyB);
-    margin: 0px;
-    height: 40px;
-
-}
-.reviewText{
-    font-size: 1.2rem;
-    border: 2px solid black;
-    height: 225px;
-    padding: 20px;
-    margin: 0;
-    background-color: lightgrey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.reviewScroller{
-    height:35px;
-    background-color: black;
+.buttonContainer{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 10px;
+    height: 120px;
 }
-.reviewScroller button{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: var(--goldAndyB);
+.buttonContainer figure{
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
     cursor: pointer;
+    font-weight: 900;
+
+}
+.buttonContainer button{
+    width: 75px;
+    height: 75px;
+    border-radius: 30%;
+    margin: 0 25px 10px 25px;
+    padding-bottom: 10px;
+    background-color: var(--goldAndyB);
     outline: none;
 }
-.reviewScroller button:hover{
+.buttonContainer button:hover{
     transform: scale(1.5);
 }
 
-.buttonArrow{
-    font-size: 1.4rem;
-    font-weight: normal;
-    margin:0;
-    padding-bottom:3px;
-    display: flex;
-    align-items: center;
-    border: none;
-}
+.leftButtonArrow::before{
+    content: '<<';
+    font-size: 50px;
 
-.leftButtonArrow::after{
-    content: '<';
 }
 .rightButtonArrow::after{
-    content: '>';
+    content: '>>';
+    font-size: 50px;
+}
+.buttonContainer button:hover .leftButtonArrow{
+    padding-right: 10px;
+    transition-duration: 0.4s;
+}
+.buttonContainer button:hover .rightButtonArrow{
+    padding-left: 10px;
+    transition-duration: 0.4s;
 }
 
-.reviewPage{
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
 
-}
-.reviewMain{
-    background-repeat: no-repeat;
-    background-size: cover;
-    flex-grow: 1;
 
-}
+
+
+
 .reviewBackgroundDiv{
     position: absolute;
     width: 100%;
@@ -570,24 +565,42 @@ ul{
     background-size: cover;
 }
 
+/*----------------------blog page-------------------------*/
+
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blogCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+}
+
+.blogCard img{
+    width: 70%;
+    margin: auto;
+}
+
 
 /*----------------------contact page-------------------------*/
 
-.contactPage{
+.contact{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    align-items: center;
 }
-
-.contactPage .main{
-    flex-shrink: 0;
-    flex-grow: 1;
+.contact section{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.contactPage .mainImage{
-    margin: 20px;
-}
-
-.sideLogo{
-    display: none;
+.contact img{
+    width: 70%;
+    margin: auto;
 }
