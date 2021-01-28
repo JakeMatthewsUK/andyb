@@ -27,3 +27,6 @@ function reviewClick(argument){
 	currentReview.children[0].children[1].innerHTML=reviewBank.children[displayedReview].children[1].innerHTML;
 }
 
+function displayLoaded(imageNum){
+	console.log(imageNum);
+}

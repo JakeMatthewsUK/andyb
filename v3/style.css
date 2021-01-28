@@ -1,4 +1,4 @@
-/*--------------------------General formatting---------------------------*/
+/*#region General Formatting */
 
 :root{
     --greyAndyB: #747474;
@@ -6,15 +6,14 @@
     --goldAndyB:  #ffe400;
     --blackAndyB: #272727;
 }
-
 @font-face {
     font-family: anotherBirdhouse;
     src: url("./Resources/Fonts/Another\ Birdhouse.ttf");
-  }
+}
 @font-face {
     font-family: LouisGeorgeCafe;
     src: url("./Resources/Fonts/Louis\ George\ Cafe.ttf");
-  }
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -23,7 +22,6 @@
     line-height: 1.2;
     user-select: none;
 }
-
 body{
     height: 100vh;
     display: flex;
@@ -31,11 +29,9 @@ body{
     flex-shrink: 0;
     flex-grow: 1;
 }
-
 main{
     flex-grow: 1;
 }
-
 .pageTitle, .subheading{
     font-family: anotherBirdhouse;
     text-transform: uppercase;
@@ -46,7 +42,6 @@ main{
     text-align: center;
     width: 100%;
 }
-
 p{
     font-size: 22px;
     font-weight: 500;
@@ -60,14 +55,11 @@ img {
     border: 3px solid black;
     object-fit: cover;
 }
-
 a{
     font-weight: bold;
     cursor: pointer;
 }
-
 /*---------Header---------*/
-
 .upperHeader{
     display: flex;
     height: 145px;
@@ -117,7 +109,6 @@ a{
 .phoneNumners{
     justify-content: center;
 }
-
 .contactText{
     white-space:pre;
     cursor: pointer;
@@ -128,9 +119,7 @@ a{
     color: var(--greenAndyB);
     transition-duration: 0.3s;
 }
-
 /*---------Navbar---------*/
-
 nav{
     position: sticky;
     display: flex;
@@ -141,7 +130,6 @@ nav{
     font-weight: 900;
     z-index: 100;
 }
-
 .navBar{
     height: 45px;
     justify-content: center;
@@ -167,21 +155,17 @@ nav{
     color: var(--greenAndyB);
     background-color: var(--blackAndyB);
 }
-
 /* other stuff*/
-
 .container{
     text-align: center;
     margin: auto;
 }
-
 /*---------Footer-------*/
 .socialMediaLinks{
     display: flex;
     justify-content: center;
     background-color: var(--blackAndyB);
 }
-
 .fab {
     margin: 5px;
     padding: 5px;
@@ -191,7 +175,6 @@ nav{
       opacity: 0.6;
       background-color: white;
 }
-
 .fa-facebook, .fa-facebook-messenger { color: #3b5998; }
 .fa-twitter { color: #00aced; }
 .fa-instagram { color: #517fa4; }
@@ -202,17 +185,16 @@ nav{
     margin: auto;
     bottom:0;
 }
-
 .PolicyContainer{
     font-size: 1rem;
     padding: 5px;
     text-align: center;
     font-weight: bold;
-    width: 100%;
-    
+    width: 100%;  
 }
+/*#endregion*/
 
-/*--------------------------Home Page------------------------------*/
+/*#region HomePage*/
 
 #homePageTitle{
     font-size: 140px;
@@ -224,6 +206,7 @@ nav{
     2px -2px 0px black,
     -2px -2px 0px black;
 }
+
 .homePage .subheading{
     margin: -20px auto;
     color: white;
@@ -248,18 +231,14 @@ nav{
     flex-direction: column;
     justify-content: center;
 }
-
-
 .homeBlurb {
     width: 100%;
     text-align: center;
     padding: 20px 40px;
 }
+/*#endregion*/
 
-
-
-
-/*-----------Services Page----------*/
+/*#region Services Page*/
 
 .servicesGrid{
     display: flex;
@@ -290,7 +269,6 @@ nav{
 .service2{
     background-color: lightgrey;
 }
-
 .serviceImage{
     width: 100%;
     height: 210px;
@@ -308,18 +286,18 @@ nav{
     font-size: 14px;
     position: absolute;
 }
-
 .service1 .serviceInfo{
     background-color: var(--greyAndyB);
 }
 .service2 .serviceInfo{
     background-color: lightgrey;
 }
-
 .serviceCard:hover .serviceInfo{
     display: block;
 }
-/*-------------------About Page------------------*/
+/*#endregion*/
+
+/*#region About Page*/
 
 .about section{
     display: flex;
@@ -327,22 +305,20 @@ nav{
     padding:0 50px;
     justify-content: center;
 }
-
 .about p{
     margin: 20px;
 }
-
 #andyImage{
     width: 500px;
     margin: 20px;
 }
-
 #terryImage{
     width: 400px;
     margin: 20px;
 }
-
-  /*-------------------Gallery Page------------------*/
+/*#endregion*/
+ 
+/*#region Gallery Page*/
 
 .gallery{
     display: flex;
@@ -353,10 +329,9 @@ nav{
 .gallery figcaption{
     font-size: 24px;
 }
-
 .galleryFeature{
     width: 100%;
-    margin: 5px auto;
+    margin: 30px auto;
     padding: 0 20px;
     display: flex;
     max-width: 1400px;
@@ -394,7 +369,6 @@ nav{
 .gallery img{
     width: 100%;
 }
-
 .gallery1{
     background-color: lightgrey;
 }
@@ -404,9 +378,7 @@ nav{
 .gallery2 .featureSubPhotos figure{
     flex-direction: row-reverse;
 }
-
-/*-This section creates a slider image feature-*/
-
+/*-This section creates a slider image-*/
 .imageScrollerDiv{
     display: flex;
     justify-content: space-around; 
@@ -440,7 +412,6 @@ div#comparison figure div {
     bottom: 0;
     height: 120%;
 }
-  
 input[type=range]{
     -webkit-appearance:none;
     -moz-appearance:none;
@@ -456,7 +427,26 @@ input[type=range]:active {
     outline: none;  
 }
 
-/*-------------------Review Page------------------*/
+/*Middle gallery section where new images are added*/
+.galleryGrid{
+    display: grid;
+    width: 100%;
+    max-width: 1220px;
+    height: fit-content;
+    margin: 30px 0px;
+    grid-template-columns: repeat( auto-fit, minmax(400px, 1fr) );
+    gap: 10px;
+    justify-items: center;
+}
+.galleryGrid img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+/*#endregion*/
+
+/*#region Review Page*/
 
 .reviewCard{
     width: 1000px;
@@ -482,16 +472,14 @@ input[type=range]:active {
     align-items: center;
     margin: 0px;
     font-weight: 900;
-    max-width: none;
-    
+    max-width: none; 
 }
 .reviewTitle{ 
     font-size: 30px;
     color: var(--goldAndyB);
     background-color: var(--blackAndyB);
     border-bottom: 2px solid black;
-    padding: 20px;
-    
+    padding: 20px;   
 }
 .reviewText{
     font-size: 22px;
@@ -515,7 +503,6 @@ ul{
     align-items: center;
     cursor: pointer;
     font-weight: 900;
-
 }
 .buttonContainer button{
     width: 75px;
@@ -529,11 +516,9 @@ ul{
 .buttonContainer button:hover{
     transform: scale(1.5);
 }
-
 .leftButtonArrow::before{
     content: '<<';
     font-size: 50px;
-
 }
 .rightButtonArrow::after{
     content: '>>';
@@ -547,12 +532,6 @@ ul{
     padding-left: 10px;
     transition-duration: 0.4s;
 }
-
-
-
-
-
-
 .reviewBackgroundDiv{
     position: absolute;
     width: 100%;
@@ -564,8 +543,9 @@ ul{
     background-position: 0% -50%;
     background-size: cover;
 }
+/*#endregion*/
 
-/*----------------------blog page-------------------------*/
+/*#region Blog Page*/
 
 .blog{
     display: flex;
@@ -577,16 +557,15 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 950px;
 }
-
 .blogCard img{
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
+/*#endregion*/
 
-
-/*----------------------contact page-------------------------*/
+/*#region Contact Page*/
 
 .contact{
     display: flex;
@@ -594,13 +573,23 @@ ul{
     align-items: center;
 }
 .contact section{
-    width: 1200px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .contact img{
-    width: 70%;
+    width: 50%;
     margin: auto;
 }
+.contact p{
+    text-align: left;
+    margin: 0 10px;
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: none;
+}
+
+/*#endregion*/
+
