@@ -28,6 +28,7 @@ body{
     flex-direction: column;
     flex-shrink: 0;
     flex-grow: 1;
+    background-color: rgba(245, 222, 179, 0.335);
 }
 main{
     flex-grow: 1;
@@ -37,10 +38,16 @@ main{
     text-transform: uppercase;
     font-weight: lighter;
     word-spacing: 0.4em;
-    font-size: 80px;
+    font-size: 120px;
+    color: white;
     margin: 20px auto;
     text-align: center;
     width: 100%;
+    text-shadow: 
+    -2px 2px 4px black, 
+    2px 2px 4px black,
+    2px -2px 0px black,
+    -2px -2px 0px black;
 }
 p{
     font-size: 22px;
@@ -260,6 +267,7 @@ nav{
     transform: scale(1.5);
     height: fit-content;
     min-height: 300px;
+    transition-delay: 0.7s;
     transition-duration: 0.5s;
     z-index: 10;
 }
@@ -277,14 +285,13 @@ nav{
 .serviceHeading{
     font-size: 30px;
     text-align: center;
-}
-.serviceCard:hover .serviceHeading{
-    font-size: 22px;
+    font-weight: 600;
 }
 .serviceInfo{
     display: none;
     font-size: 14px;
     position: absolute;
+    font-weight: bold;
 }
 .service1 .serviceInfo{
     background-color: var(--greyAndyB);
