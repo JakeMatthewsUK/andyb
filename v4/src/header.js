@@ -56,3 +56,9 @@ function Header() {
 }
 
 export default Header;
+
+// <HashRouter>
+// <Header/>
+// <Body/>
+// <Footer/>
+// </HashRouter>

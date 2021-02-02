@@ -96,7 +96,7 @@ a {
   display: block;
   justify-content: center;
   color: var(--blackAndyB);
-  font-size: 14px;
+  font-size: 22px;
   margin: 10px;
 }
 .upperHeader a.phoneNum {
@@ -151,7 +151,7 @@ nav {
   color: var(--blackAndyB);
   display: inline-flex;
   align-items: center;
-  font-size: 12px;
+  font-size: 22px;
   height: 100%;
   text-decoration: none;
   cursor: pointer;
@@ -164,6 +164,12 @@ nav {
 }
 .navBar .current {
   color: var(--greenAndyB);
+}
+.active {
+  background-color: #0099FF;
+}
+li {
+  list-style-type: none;
 }
 /* other stuff*/
 .container {

@@ -1,11 +1,7 @@
 import "./style.css";
 
-function Body() {
-
-    if(1===1){
-        
+function Home() {
   return (
-    <div className="fullBody">
       <main className="homePage">
         <h1 className="pageTitle">Andy B Garden Services</h1>
         <section className="pictureBanner"></section>
@@ -39,9 +35,7 @@ function Body() {
           </p>
         </div>
       </main>
-    </div>
   );
-    }
 }
 
-export default Body;
+export default Home;
