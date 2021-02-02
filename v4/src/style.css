@@ -1,0 +1,637 @@
+/*#region General Formatting */
+
+:root {
+  --greyAndyB: #747474;
+  --greenAndyB: #14a78c;
+  --goldAndyB: #ffe400;
+  --blackAndyB: #272727;
+}
+@font-face {
+  font-family: anotherBirdhouse;
+  src: url("./Resources/Fonts/Another\ Birdhouse.ttf");
+}
+@font-face {
+  font-family: LouisGeorgeCafe;
+  src: url("./Resources/Fonts/Louis\ George\ Cafe.ttf");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: LouisGeorgeCafe;
+  line-height: 1.2;
+  user-select: none;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+main section {
+  margin: auto;
+}
+.pageTitle,
+.subheading {
+  font-weight: lighter;
+  word-spacing: 0.4em;
+  font-size: 36px;
+  background-color: var(--blackAndyB);
+  color: white;
+  margin: 0 auto;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+}
+p {
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  margin: 20px auto;
+  max-width: 900px;
+}
+img {
+  height: auto;
+  border: 3px solid black;
+  object-fit: cover;
+}
+a {
+  font-weight: bold;
+  cursor: pointer;
+}
+/*---------Header---------*/
+.upperHeader {
+  display: flex;
+  height: 155px;
+  width: 100%;
+  text-align: right;
+  align-items: center;
+  justify-content: space-between;
+}
+.logoContainer {
+  width: fit-content;
+  height: 155px;
+  margin-left: 40px;
+  z-index: 300;
+  top: 0;
+}
+
+.logo {
+  height: 135px;
+  width: auto;
+  top: 10px;
+  z-index: 200;
+}
+.logo:hover {
+  opacity: 0.7;
+}
+.upperHeader a {
+  display: block;
+  justify-content: center;
+  color: var(--blackAndyB);
+  font-size: 14px;
+  margin: 10px;
+}
+.upperHeader a.phoneNum {
+  display: inline-block;
+  color: var(--goldAndyB);
+}
+.upperHeaderRight {
+  display: flex;
+  width: 700px;
+  color: var(--greenAndyB);
+}
+.upperHeaderCentre {
+  flex-grow: 1;
+}
+.upperHeaderLeft {
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
+  color: var(--greenAndyB);
+}
+.phoneNumners {
+  justify-content: center;
+}
+.contactText {
+  white-space: pre;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  margin: 0px 10px;
+}
+.contactText:hover {
+  color: var(--greenAndyB);
+  transition-duration: 0.3s;
+}
+/*---------Navbar---------*/
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  color: var(--blackAndyB);
+  background-color: white;
+  font-weight: 900;
+  z-index: 100;
+  width: 100%;
+}
+.navBar {
+  height: 25px;
+  justify-content: center;
+  display: flex;
+}
+.navBar a {
+  color: var(--blackAndyB);
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  height: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0px 20px;
+  transition-duration: 0.5s;
+}
+.navBar a:hover {
+  color: var(--greenAndyB);
+  transition-duration: 0.5s;
+}
+.navBar .current {
+  color: var(--greenAndyB);
+}
+/* other stuff*/
+.container {
+  text-align: right;
+  width: 100%;
+  margin-right: 40px;
+}
+/*---------Footer-------*/
+.socialMediaLinks {
+  display: flex;
+  justify-content: center;
+  background-color: var(--blackAndyB);
+}
+.fab {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.fab:hover {
+  opacity: 0.6;
+  background-color: white;
+}
+.fa-facebook,
+.fa-facebook-messenger {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-instagram {
+  color: #517fa4;
+}
+.fa-spotify {
+  color: #1ed760;
+}
+.fa-whatsapp {
+  color: #1ed760;
+}
+.fa-skype {
+  color: #00aff0;
+}
+.footerCentre {
+  margin: auto;
+  bottom: 0;
+}
+.PolicyContainer {
+  font-size: 1rem;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+}
+/*#endregion*/
+
+/*#region HomePage*/
+
+.homePage {
+  display: block;
+}
+#homePageTitle {
+  font-family: anotherBirdhouse;
+  text-transform: uppercase;
+  font-size: 140px;
+  margin: -20px auto;
+  color: white;
+  background-color: unset;
+  text-shadow: -2px 2px 4px black, 2px 2px 4px black, 2px -2px 0px black,
+    -2px -2px 0px black;
+}
+
+.homePage .subheading {
+  font-family: anotherBirdhouse;
+  text-transform: uppercase;
+  margin: -20px auto;
+  color: white;
+  background-color: unset;
+  text-shadow: -2px 2px 4px black, 2px 2px 4px black, 2px -2px 0px black,
+    -2px -2px 0px black;
+  font-size: 100px;
+}
+.homePage .pictureBanner {
+  background-image: url("./Resources/Images/andyLawnFromHouse.JPG");
+  background-position: 0% 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-top: 0;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.homeBlurb {
+  width: 100%;
+  text-align: center;
+  padding: 20px 40px;
+}
+/*#endregion*/
+
+/*#region Services Page*/
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+.servicesGrid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 105px;
+  justify-content: center;
+  margin: auto;
+}
+.serviceCard {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  text-align: center;
+}
+.serviceCard p {
+  width: 100%;
+  margin: 0 auto;
+}
+.serviceCard:hover {
+  transform: scale(1.5);
+  height: fit-content;
+  min-height: 300px;
+  transition-delay: 0.7s;
+  transition-duration: 0.5s;
+  z-index: 10;
+}
+.service1 {
+  background-color: var(--greyAndyB);
+}
+.service2 {
+  background-color: lightgrey;
+}
+.serviceImage {
+  width: 100%;
+  height: 210px;
+  border: none;
+}
+.serviceHeading {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+.serviceInfo {
+  display: none;
+  font-size: 14px;
+  position: absolute;
+  font-weight: bold;
+}
+.service1 .serviceInfo {
+  background-color: var(--greyAndyB);
+}
+.service2 .serviceInfo {
+  background-color: lightgrey;
+}
+.serviceCard:hover .serviceInfo {
+  display: block;
+}
+/*#endregion*/
+
+/*#region About Page*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about section {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  padding: 0 50px;
+  margin: auto;
+
+  justify-content: center;
+}
+.about p {
+  margin: 20px;
+}
+#andyImage {
+  width: 500px;
+  margin: 20px;
+}
+#terryImage {
+  width: 600px;
+  margin: 20px;
+}
+/*#endregion*/
+
+/*#region Gallery Page*/
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.gallery figcaption {
+  font-size: 24px;
+}
+.galleryFeature {
+  width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  max-width: 1400px;
+  border: 1px solid black;
+}
+.featurePhoto {
+  width: 60%;
+  padding: 20px;
+}
+.featurePhoto figcaption {
+  margin-top: 20px;
+}
+.featureSubPhotos {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  padding: 20px;
+}
+.featureSubPhotos figure {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.featureSubPhotos figure img {
+  width: 50%;
+}
+.featureSubPhotos figure img:hover {
+  transform: scale(2);
+  transition-duration: 0.5s;
+}
+.featureSubPhotos figcaption {
+  margin: 0 20px;
+}
+.gallery img {
+  width: 100%;
+}
+.gallery1 {
+  background-color: lightgrey;
+}
+.gallery2 {
+  flex-direction: row-reverse;
+}
+.gallery2 .featureSubPhotos figure {
+  flex-direction: row-reverse;
+}
+/*-This section creates a slider image-*/
+.imageScrollerDiv {
+  display: flex;
+  justify-content: space-around;
+}
+div#comparison {
+  width: 60vw;
+  height: 60vw;
+  max-width: 800px;
+  max-height: 700px;
+  overflow: hidden;
+  border: 0.2rem solid var(--blackAndyB);
+}
+div#comparison figure {
+  background-image: url(./Resources/Images/before.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+div#comparison figure > img {
+  position: relative;
+  width: 100%;
+}
+div#comparison figure div {
+  background-image: url(./Resources/Images/after.jpg);
+  background-size: cover;
+  background-position: 0% 100%;
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  bottom: 0;
+  height: 120%;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  top: -2rem;
+  left: -1%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 102%;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]:active {
+  outline: none;
+}
+
+/*Middle gallery section where new images are added*/
+.galleryGrid {
+  display: grid;
+  width: 100%;
+  max-width: 1220px;
+  height: fit-content;
+  margin: 30px 0px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+.galleryGrid img {
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+}
+
+/*#endregion*/
+
+/*#region Review Page*/
+
+.reviewCard {
+  width: 1000px;
+  height: fit-content;
+  margin: 60px auto;
+  flex-shrink: 10;
+}
+.currentReview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightgrey;
+  border: 2px solid black;
+}
+.reviewBank {
+  visibility: hidden;
+  overflow: hidden;
+  height: 0;
+}
+.reviewTitle,
+.reviewText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  font-weight: 900;
+  max-width: none;
+}
+.reviewTitle {
+  font-size: 30px;
+  color: var(--goldAndyB);
+  background-color: var(--blackAndyB);
+  border-bottom: 2px solid black;
+  padding: 20px;
+}
+.reviewText {
+  font-size: 22px;
+  font-style: oblique;
+  color: black;
+  background-color: lightgrey;
+  min-height: 350px;
+  padding: 20px;
+}
+ul {
+  list-style-type: none;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+}
+.buttonContainer figure {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 900;
+}
+.buttonContainer button {
+  width: 75px;
+  height: 75px;
+  border-radius: 30%;
+  margin: 0 25px 10px 25px;
+  padding-bottom: 10px;
+  background-color: var(--goldAndyB);
+  outline: none;
+}
+.buttonContainer button:hover {
+  transform: scale(1.5);
+}
+.leftButtonArrow::before {
+  content: "<<";
+  font-size: 50px;
+}
+.rightButtonArrow::after {
+  content: ">>";
+  font-size: 50px;
+}
+.buttonContainer button:hover .leftButtonArrow {
+  padding-right: 10px;
+  transition-duration: 0.4s;
+}
+.buttonContainer button:hover .rightButtonArrow {
+  padding-left: 10px;
+  transition-duration: 0.4s;
+}
+.reviewBackgroundDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("./Resources/temporaryImages/reviewImage.jpeg");
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-position: 0% -50%;
+  background-size: cover;
+}
+/*#endregion*/
+
+/*#region Blog Page*/
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blogCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 950px;
+}
+.blogCard img {
+  width: 80%;
+  margin: auto;
+}
+/*#endregion*/
+
+/*#region Contact Page*/
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+}
+.contact img {
+  width: 50%;
+  margin: auto;
+}
+.contact p {
+  text-align: left;
+  margin: 0 10px;
+  font-size: 22px;
+  line-height: 1.5;
+  max-width: none;
+}
+
+/*#endregion*/
