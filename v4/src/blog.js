@@ -1,4 +1,3 @@
-import "./style.css";
 import blogImage from "./Resources/temporaryImages/blogImage.png";
 
 function Blog() {

@@ -1,4 +1,4 @@
-import "./style.css";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -7,13 +7,10 @@ function Footer() {
         <a href="http://www.facebook.com">
           <i className="fab fa-facebook fa-2x"></i>
         </a>
-        <a href="http://www.instagram.com">
+        <a href="https://www.instagram.com/andybgardenservices/">
           <i className="fab fa-instagram fa-2x"></i>
         </a>
-        <a href="http://www.skype.com">
-          <i className="fab fa-skype fa-2x"></i>
-        </a>
-        <a href="http://www.twitter.com">
+        <a href="https://twitter.com/andybgardens">
           <i className="fab fa-twitter fa-2x"></i>
         </a>
         <a href="http://www.whatsapp.com">
@@ -25,11 +22,8 @@ function Footer() {
       </section>
       <footer className="PolicyContainer">
         <span>©2021 Andy B Garden Services.</span>
-        <a href="privacy.html">
-          <span className="contactText">Privacy Policy</span>
-        </a>
+        <NavLink to="/privacy">Privacy Policy</NavLink>
       </footer>
-      <script src="website.js" type="text/javascript"></script>
     </div>
   );
 }

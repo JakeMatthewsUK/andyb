@@ -1,17 +1,12 @@
-import "./style.css";
-import andyTurnip from "./Resources/Images/andyTurnip.jpg"
-import terryWalton from "./Resources/Images/TerryWalton.jpg"
+import andyTurnip from "./Resources/Images/andyTurnip.jpg";
+import terryWalton from "./Resources/Images/TerryWalton.jpg";
 
 function About() {
   return (
     <main className="about">
       <h1 className="pageTitle">About Andy B</h1>
       <section>
-        <img
-          id="andyImage"
-          src={andyTurnip}
-          alt="andy holding giant turnip"
-        />
+        <img id="andyImage" src={andyTurnip} alt="andy holding giant turnip" />
         <p>
           Gardening is in my blood. Initially inspired my grandfather. Whenever
           I’d visit, he’d spend all his time outside working in his garden at
@@ -20,11 +15,7 @@ function About() {
           fascinated by his greenhouse packed with exotic cacti! Then of course
           there’s my dad, Terry Walton, BBC Radio2’s adopted “allotmenteer”.{" "}
         </p>
-        <img
-          id="terryImage"
-          src={terryWalton}
-          alt="andy with Terry Walton"
-        />
+        <img id="terryImage" src={terryWalton} alt="andy with Terry Walton" />
         <p>
           Many happy childhood hours were spent helping at his allotment plots
           or helping grow and tending the thousands of bedding plants that were

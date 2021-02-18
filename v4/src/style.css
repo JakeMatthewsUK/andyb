@@ -2,8 +2,8 @@
 
 :root {
   --greyAndyB: #747474;
-  --greenAndyB: #14a78c;
-  --goldAndyB: #ffe400;
+  --greenAndyB: #009800;
+  --goldAndyB: #ffd501;
   --blackAndyB: #272727;
 }
 @font-face {
@@ -18,9 +18,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: LouisGeorgeCafe;
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-weight: normal;
   line-height: 1.2;
   user-select: none;
+}
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 body {
   height: 100vh;
@@ -30,20 +36,25 @@ body {
   flex-grow: 1;
 }
 main {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
 }
 main section {
   margin: auto;
 }
+.pageContent {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
 .pageTitle,
 .subheading {
-  font-weight: lighter;
+  font-weight: bold;
   word-spacing: 0.4em;
   font-size: 36px;
+  letter-spacing: 2px;
+  word-spacing: 0.09em;
   background-color: var(--blackAndyB);
-  color: white;
+  color: var(--goldAndyB);
   margin: 0 auto;
   padding: 5px 0;
   text-align: center;
@@ -51,7 +62,6 @@ main section {
 }
 p {
   font-size: 22px;
-  font-weight: 500;
   text-align: center;
   line-height: 1.5;
   margin: 20px auto;
@@ -63,24 +73,29 @@ img {
   object-fit: cover;
 }
 a {
-  font-weight: bold;
   cursor: pointer;
+  font-weight: 500;
 }
 /*---------Header---------*/
 .upperHeader {
   display: flex;
   height: 155px;
   width: 100%;
+  background-color: var(--greenAndyB);
   text-align: right;
   align-items: center;
   justify-content: space-between;
 }
 .logoContainer {
   width: fit-content;
+  position: fixed;
+  padding: 5px;
   height: 155px;
-  margin-left: 40px;
-  z-index: 300;
-  top: 0;
+  z-index: 9;
+  top: 100px;
+  left: 20px;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .logo {
@@ -88,6 +103,7 @@ a {
   width: auto;
   top: 10px;
   z-index: 200;
+  border: none;
 }
 .logo:hover {
   opacity: 0.7;
@@ -96,7 +112,7 @@ a {
   display: block;
   justify-content: center;
   color: var(--blackAndyB);
-  font-size: 22px;
+  font-size: 16px;
   margin: 10px;
 }
 .upperHeader a.phoneNum {
@@ -106,7 +122,6 @@ a {
 .upperHeaderRight {
   display: flex;
   width: 700px;
-  color: var(--greenAndyB);
 }
 .upperHeaderCentre {
   flex-grow: 1;
@@ -121,6 +136,7 @@ a {
   justify-content: center;
 }
 .contactText {
+  color: var(--blackAndyB);
   white-space: pre;
   cursor: pointer;
   transition-duration: 0.7s;
@@ -132,41 +148,44 @@ a {
 }
 /*---------Navbar---------*/
 nav {
-  position: fixed;
+  position: sticky;
   display: flex;
   justify-content: center;
   top: 0;
   color: var(--blackAndyB);
-  background-color: white;
+  background-color: var(--goldAndyB);
   font-weight: 900;
   z-index: 100;
   width: 100%;
 }
 .navBar {
-  height: 25px;
+  height: fit-content;
   justify-content: center;
   display: flex;
 }
 .navBar a {
-  color: var(--blackAndyB);
   display: inline-flex;
   align-items: center;
-  font-size: 22px;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
   height: 100%;
   text-decoration: none;
   cursor: pointer;
-  padding: 0px 20px;
-  transition-duration: 0.5s;
+  padding: 5px 30px;
+  transition-duration: 0.2s;
 }
 .navBar a:hover {
+  transition-duration: 0.2s;
   color: var(--greenAndyB);
-  transition-duration: 0.5s;
 }
-.navBar .current {
-  color: var(--greenAndyB);
+.navBar a:hover.active {
+  transition-duration: 0.2s;
+  color: var(--blackAndyB);
 }
 .active {
-  background-color: #0099FF;
+  background-color: var(--greenAndyB);
+  color: white;
 }
 li {
   list-style-type: none;
@@ -229,27 +248,6 @@ li {
 .homePage {
   display: block;
 }
-#homePageTitle {
-  font-family: anotherBirdhouse;
-  text-transform: uppercase;
-  font-size: 140px;
-  margin: -20px auto;
-  color: white;
-  background-color: unset;
-  text-shadow: -2px 2px 4px black, 2px 2px 4px black, 2px -2px 0px black,
-    -2px -2px 0px black;
-}
-
-.homePage .subheading {
-  font-family: anotherBirdhouse;
-  text-transform: uppercase;
-  margin: -20px auto;
-  color: white;
-  background-color: unset;
-  text-shadow: -2px 2px 4px black, 2px 2px 4px black, 2px -2px 0px black,
-    -2px -2px 0px black;
-  font-size: 100px;
-}
 .homePage .pictureBanner {
   background-image: url("./Resources/Images/andyLawnFromHouse.JPG");
   background-position: 0% 75%;
@@ -272,7 +270,7 @@ li {
 /*#endregion*/
 
 /*#region Services Page*/
-
+/* 
 .services {
   display: flex;
   flex-direction: column;
@@ -315,15 +313,13 @@ li {
   border: none;
 }
 .serviceHeading {
-  font-size: 30px;
+  font-size: 1.8rem;
   text-align: center;
-  font-weight: 600;
 }
 .serviceInfo {
   display: none;
-  font-size: 14px;
+  font-size: 0.9rem;
   position: absolute;
-  font-weight: bold;
 }
 .service1 .serviceInfo {
   background-color: var(--greyAndyB);
@@ -333,7 +329,7 @@ li {
 }
 .serviceCard:hover .serviceInfo {
   display: block;
-}
+} */
 /*#endregion*/
 
 /*#region About Page*/
@@ -373,7 +369,7 @@ li {
   align-items: center;
 }
 .gallery figcaption {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 .galleryFeature {
   width: 100%;
@@ -523,14 +519,14 @@ input[type="range"]:active {
   max-width: none;
 }
 .reviewTitle {
-  font-size: 30px;
+  font-size: 1.9rem;
   color: var(--goldAndyB);
   background-color: var(--blackAndyB);
   border-bottom: 2px solid black;
   padding: 20px;
 }
 .reviewText {
-  font-size: 22px;
+  font-size: 1.25rem;
   font-style: oblique;
   color: black;
   background-color: lightgrey;
@@ -566,11 +562,11 @@ ul {
 }
 .leftButtonArrow::before {
   content: "<<";
-  font-size: 50px;
+  font-size: 3rem;
 }
 .rightButtonArrow::after {
   content: ">>";
-  font-size: 50px;
+  font-size: 3rem;
 }
 .buttonContainer button:hover .leftButtonArrow {
   padding-right: 10px;
@@ -635,9 +631,96 @@ ul {
 .contact p {
   text-align: left;
   margin: 0 10px;
-  font-size: 22px;
+  font-size: 1.4rem;
   line-height: 1.5;
   max-width: none;
 }
 
 /*#endregion*/
+
+.serviceGrid {
+  width: 100%;
+  padding: 0px 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.serviceCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+  flex-shrink: 1;
+  height: 300px;
+  width: 400px;
+  min-width: 225px;
+  padding: 10px;
+  color: black;
+  background-color: hsl(120, 20%, 70%);
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.582);
+  border-radius: 10px;
+  user-select: none;
+}
+
+.serviceCard figure {
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid black;
+  width: 100%;
+  transition-duration: 1s;
+}
+
+.serviceCard:hover .serviceImage {
+  opacity: 0.07;
+  transition-duration: 1s;
+}
+
+.imageAndText {
+  width: 1200px;
+  margin: auto;
+  background-color: #c2d7eda9;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: justify;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+article {
+  position: absolute;
+  font-size: 1.5rem;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  opacity: 0;
+  transition-duration: 1s;
+  z-index: -1;
+  margin: 15px;
+}
+
+.serviceCard:hover article {
+  opacity: 1;
+  transition-duration: 1s;
+  z-index: 2;
+}
+
+.serviceTitle {
+  background-color: rgba(255, 255, 255, 0.698);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: normal;
+  width: 100%;
+  padding: 5px;
+}
+.serviceImage {
+  display: flex;
+  align-items: flex-end;
+}
+
+.hiddenServiceText {
+  font-size: 1.2rem;
+}
