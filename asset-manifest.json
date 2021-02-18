@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/andyb/v4/static/css/main.ec79bd1f.chunk.css",
+    "main.js": "/andyb/v4/static/js/main.826baa15.chunk.js",
+    "main.js.map": "/andyb/v4/static/js/main.826baa15.chunk.js.map",
+    "runtime-main.js": "/andyb/v4/static/js/runtime-main.3bf57ee1.js",
+    "runtime-main.js.map": "/andyb/v4/static/js/runtime-main.3bf57ee1.js.map",
+    "static/js/2.aa485960.chunk.js": "/andyb/v4/static/js/2.aa485960.chunk.js",
+    "static/js/2.aa485960.chunk.js.map": "/andyb/v4/static/js/2.aa485960.chunk.js.map",
+    "index.html": "/andyb/v4/index.html",
+    "static/css/main.ec79bd1f.chunk.css.map": "/andyb/v4/static/css/main.ec79bd1f.chunk.css.map",
+    "static/js/2.aa485960.chunk.js.LICENSE.txt": "/andyb/v4/static/js/2.aa485960.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/andyb/v4/static/media/reviewImage.9ca96a28.jpeg",
+    "static/media/Logo - White Background.199e0988.png": "/andyb/v4/static/media/Logo - White Background.199e0988.png",
+    "static/media/TerryWalton.f9d4e9c1.jpg": "/andyb/v4/static/media/TerryWalton.f9d4e9c1.jpg",
+    "static/media/andyTerry.9b790f4f.jpg": "/andyb/v4/static/media/andyTerry.9b790f4f.jpg",
+    "static/media/andyTurnip.f641cca0.jpg": "/andyb/v4/static/media/andyTurnip.f641cca0.jpg",
+    "static/media/beeFlower.b0d8a18a.JPG": "/andyb/v4/static/media/beeFlower.b0d8a18a.JPG",
+    "static/media/before2.ed3eff13.jpg": "/andyb/v4/static/media/before2.ed3eff13.jpg",
+    "static/media/blogImage.1c765c52.png": "/andyb/v4/static/media/blogImage.1c765c52.png",
+    "static/media/all.css": "/andyb/v4/static/media/fa-solid-900.f4f93856.woff",
+    "static/media/longRedPlant.3a84487c.JPG": "/andyb/v4/static/media/longRedPlant.3a84487c.JPG",
+    "static/media/onions.48111336.jpg": "/andyb/v4/static/media/onions.48111336.jpg",
+    "static/media/pinkFlower.02214a3d.jpg": "/andyb/v4/static/media/pinkFlower.02214a3d.jpg",
+    "static/media/pinkFlowerBush.524c26d1.JPG": "/andyb/v4/static/media/pinkFlowerBush.524c26d1.JPG",
+    "static/media/pinkFlowers.a3f059b9.jpg": "/andyb/v4/static/media/pinkFlowers.a3f059b9.jpg",
+    "static/media/plantPots.25e0510f.jpg": "/andyb/v4/static/media/plantPots.25e0510f.jpg",
+    "static/media/planting.d60c183e.jpg": "/andyb/v4/static/media/planting.d60c183e.jpg",
+    "static/media/plantsAndSky.0b3e3f67.jpg": "/andyb/v4/static/media/plantsAndSky.0b3e3f67.jpg",
+    "static/media/snake.9d7db9e1.jpg": "/andyb/v4/static/media/snake.9d7db9e1.jpg",
+    "static/media/yellowFlower.c6599345.JPG": "/andyb/v4/static/media/yellowFlower.c6599345.JPG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bf57ee1.js",
+    "static/js/2.aa485960.chunk.js",
+    "static/css/main.ec79bd1f.chunk.css",
+    "static/js/main.826baa15.chunk.js"
+  ]
+}
