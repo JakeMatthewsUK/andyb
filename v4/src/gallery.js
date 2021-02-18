@@ -16,6 +16,12 @@ import after from "./Resources/Images/after.jpg";
 import garden from "./Resources/Images/andyLawnFromHouse.JPG";
 
 function Gallery() {
+  function moveDivisor() {
+    let divisor = document.getElementById("divisor");
+    let slider = document.getElementById("slider");
+    divisor.style.width = slider.value + "%";
+  }
+
   return (
     <main className="gallery">
       <h1 className="pageTitle">Gallery</h1>
@@ -24,21 +30,23 @@ function Gallery() {
         <figure className="featurePhoto">
           <div className="imageScrollerDiv">
             <div id="comparison">
-              <figure>
+              <figure className="sliderPictureBackground">
                 <div id="divisor"></div>
               </figure>
               <input
+                className="sliderPictureScroller"
                 type="range"
                 min="2"
                 max="99"
                 value="50"
                 id="slider"
-                oninput="moveDivisor()"
+                onInput={moveDivisor}
               />
             </div>
           </div>
           <figcaption>
-            Drag the blue slider above to see my work transform this garden
+            Click or drag on the picture above to see my work transform this
+            garden
           </figcaption>
         </figure>
         <section className="featureSubPhotos">
@@ -100,5 +108,4 @@ function Gallery() {
     </main>
   );
 }
-
 export default Gallery;

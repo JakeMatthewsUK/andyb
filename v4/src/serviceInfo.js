@@ -12,7 +12,7 @@ export const serviceInfo = {
 
   generalMaintenance: {
     heading: "General Maintenance",
-    image: "./Images/Services/lawnMowing.jpg",
+    image: "./Images/Services/temporaryGeneralMaintenance.jpg",
     description:
       "Everything to keep your garden looking pristine, including weeding, general tidying, leaf clearance, tree and shrub pruning, lawn maintenance",
   },
@@ -35,7 +35,7 @@ export const serviceInfo = {
   },
   gardenMakeovers: {
     heading: "Garden Makeovers",
-    image: "./Images/Services/lawnMowing.jpg",
+    image: "./Images/Services/gardenMakeover.jpg",
     description: "",
   },
 
